@@ -1,0 +1,5 @@
+db.sqlite3
+migrations/
+!migrations/__init__.py
+__pycache__
+.vscode/
