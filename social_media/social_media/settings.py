@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -106,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -123,3 +125,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = [
     STATIC_DIR
 ]
+
+LOGIN_REDIRECT_URL = 'logged_in'
+LOGOUT_REDIRECT_URL = 'thanks'
