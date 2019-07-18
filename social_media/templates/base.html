@@ -24,12 +24,12 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         {% if user.is_authenticated %}
-                            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Post</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Groups</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Create Groups</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'posts:create' %}">Post</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'groups:all' %}">Groups</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'groups:create' %}">Create Groups</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'accounts:logout' %}">Logout</a></li>
                         {% else %}
-                            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Groups</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'groups:all' %}">Groups</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'accounts:login' %}">Login</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'accounts:signup' %}">Sign Up</a></li>
                         {% endif %}
