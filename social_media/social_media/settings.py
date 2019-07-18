@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'bootstrap4'
+    'bootstrap4',
+    'groups',
+    'posts'
 ]
 
 MIDDLEWARE = [
@@ -122,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = [
+STATICFILES_DIRS = [
     STATIC_DIR
 ]
 
